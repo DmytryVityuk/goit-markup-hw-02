@@ -13,13 +13,18 @@
   /*Цвет кнопки*/
   --main-color: #ffffff;
   --transparent-color: rgba(255, 255, 255, 0.6);
+  --hero-btn-hover-color: #188ce8;
 }
 
 .list {
   list-style: none;
 }
-a {
+.link {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  color:var(--primary-color)
 }
 
 body {
@@ -77,9 +82,17 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+.nav-list-item.current,
 .nav-list-item:hover,
-.nav-list-item:focus {
+.nav-list-item:focus, 
+.contacts-link:hover,
+.contacts-link:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
+}
+.contacts-link {
+  color: var(--secondary-color)
 }
 /*============LOGO=============*/
 .logo {
@@ -140,6 +153,7 @@ body {
     color: var(--main-color);
   }
   /*===========PORTFOLIO============*/
+  .button-portfolio.current,
   .button-portfolio:hover,
   .button-portfolio:focus {
       background-color: var(--accent-color);
